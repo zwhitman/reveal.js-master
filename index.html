@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Ataturk Airport Briefing Book</title>
+
+		<meta name="description" content="TSA Briefing Book Prototype">
+		<meta name="author" content="Deloitte Geospatial">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css">
+
+
+        <!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+        <button class='fa fa-home' style="font-size:100%;padding:10px 20px; position:relative;float:left;top:0%;left:0%;z-index:999;background:rgba(0,0,0,0);border:none"></button>
+        <button class='fa fa-list' style="font-size:100%;padding:10px 20px; ;top:0%;position:relative;float:left;z-index:999;background:rgba(0,0,0,0);border:none"></button>
+        <div class="col-xs-12 col-md-5" id="toc" style="height:100%;display:none;font-size:65%;line-height:1.5;padding:10px;text-align:left;position:absolute;left:0%;top:58px;z-index:999;background:rgba(25,25,25,.95)">
+            <table class="table-hover">
+                <style>
+                    td {
+                        min-width:400px;
+                    }
+                </style>
+                <tbody>
+                <tr>
+                    <td>
+                        <a href="#/2">
+                            <div style="height:100%;width:100%">
+                                Airport Orientation Introduction
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#/2/1">Airport Location</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#/2/2">Major Airport Features</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#/3/0">Security Introduction</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#/3/1">Security Features</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#/3/2">Flight Path Risks</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section style="text-align: left">
+					<h1 style="font-size: 2em;">Istanbul Atat&uuml;rk Airport</h1>
+					<h3>Deloitte Geospatial</h3>
+				</section>
+
+				<section data-transition="linear" data-background="#222" data-background-transition="slide">
+					<h2 style="text-align:left">Table of Contents</h2>
+                    <br>
+                    <table class="table-hover" style="font-size:.7em;">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <a href="#/2">
+                                    <div style="height:100%;width:100%">
+                                        Airport Orientation Introduction
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="#/2/1">Airport Location</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#/2/2">Major Airport Features</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#/3/0">Security Introduction</a></td>
+
+                        </tr>
+                        <tr>
+                            <td><a href="#/3/1">Security Features</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#/3/2">Flight Path Risks</a></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+					<aside class="notes">
+						Oh hey, these are some notes. They're hidden in the presentation, but are visible in the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+
+				<!-- Example of nested vertical slides -->
+				<section data-transition="linear" data-background="#222" data-background-transition="slide">
+					<section>
+                        <h2>Airport Orientation</h2>
+                        <h5>Introduction</h5>
+                        <p class="col-xs-12" style=" font-size: .7em">
+                            <strong>Istanbul Ataturk Airport (IATA: IST; ICAO: LTBA)</strong> is the largest and busiest airport in Turkey. Passenger traffic at IST grew by over 20% from 2011 to 2012, making it the fastest growing of Europe's 50 busiest airports during that period. In 2012, it was the 20th busiest passenger airport in the world. As of May 2013, direct flights from 64 airlines linked it to at least 220 destinations.
+                        </p>
+                        <img class="img-responsive col-xs-4 col-sm-offset-1" src="http://ussltcher8035.dan.sltc.com/BriefingBook_v2/assets/images/Ataturk2.jpg">
+                        <p class="col-xs-6" align="left" style="font-size: .7em; margin: 10px 0 0 20px">
+                            <strong>IST 2012 Statistics Summary</strong>
+                        </p>
+                        <ul style="float: left; font-size:.6em; padding-left: 40px">
+                            <li>Passengers: 45,091,962 </li>
+                            <li>International: 29,812,307 </li>
+                            <li>International: 29,812,307 </li>
+                            <li>Domestic: 15,297,655 </li>
+                            <li>Cargo handled (metric tons): 1.23 million </li>
+                            <li>Total Air Movements: 364,322</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h5>Location</h5>
+                        <button class='btn-primary' id="testpButton" style="position:absolute;top:22px;right:1px;z-index:999;background:rgba(0,0,0,0)">Context</button>
+                        <div class="col-xs-4" id="testp" style="display:none;font-size:.55em;line-height:1.5;padding:10px;text-align:left;position:absolute;right:-1px;top:72px;z-index:999;background:rgba(25,25,25,.8)">
+                            <ul>
+                                <li>
+                                    IST is the larger and more-centrally located of the two international airports serving Istanbul. The second airport, Sabiha Gokcen (SHA) is on the eastern side of the Bosphorus.
+                                </li>
+                                <li>
+                                    In May 2013, the Turkish government awarded a contract to Limak Holding A.S. (the operators for Sabiha Gokcen Airport) for the development of a new airport on the Black Sea that will replace IST as Istanbul's major international air hub.
+                                </li>
+                                <li>
+                                    Of note, IST/s commerical operator, TAV Airports Holding, lost the bid.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <iframe class="stretch" style="float:left;min-height:550px;width:100%" scrolling="no" src="https://deloittegeo.maps.arcgis.com/apps/Viewer/index.html?appid=6212572a07c947849b110d9d3aae8672"></iframe>
+                    </section>
+                    <section>
+                        <h5> Major Features</h5>
+                        <button class='btn-primary' id="majFeatButton" style="position:absolute;top:22px;right:1px;z-index:999;background:rgba(0,0,0,0)">Context</button>
+                        <div class="col-xs-4" id="majFeat" style="display:none;font-size:.55em;line-height:1.5;padding:10px;text-align:left;position:absolute;right:-1px;top:72px;z-index:999;background:rgba(25,25,25,.8)">
+                            <p>
+                                <strong>Overview:</strong><br> IST facilities are generally clustered in groups supporting common operational missions. These include:
+                            <ul>
+                                <li>
+                                    Passenger Ops (International and Domestic)
+                                </li>
+                                <li>
+                                    Cargo Ops (International and Domestic)
+                                </li>
+                                <li>
+                                    Flight Training
+                                </li>
+                                <li>
+                                    Turkish Air Force
+                                </li>
+                            </ul>
+                            </p>
+                            <p>
+                                <strong>Runway Configuration:</strong><br> IST has three runways. The two longer runways (17R/35L & 17L/35R) run parallel in a north-south direction, while the third (05/23) runs northeast-southwest. Runway 05/23 is not long enough to handle some of the larger aircraft operating at IST.
+                            </p>
+                        </div>
+
+                        <iframe class="stretch" style="min-height:550px" scrolling="no" src="https://deloittegeo.maps.arcgis.com/apps/Viewer/index.html?appid=d91b1196492a4eff83cd37355426629d"></iframe>
+                    </section>
+				</section>
+
+                <!--
+                                <section data-transition="linear" data-background="#fff" data-background-transition="slide">
+                                    <h1 style="color:black">Section 2</h1>
+                                    <p>
+                                    </p>
+                                </section>
+                                <section data-transition="linear" data-background="#fff" data-background-transition="slide">
+                                    <h2 style="color:black">Point of View</h2>
+                                    <p style="color:black">
+                                        Press <strong>ESC</strong> to enter the slide overview.
+                                    </p>
+                                    <p style="color:black">
+                                        Hold down alt and click on any element to zoom in on it using <a style="color:black" href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+                                    </p>
+                                </section>
+                -->
+				<section data-transition="linear" data-background="#222" data-background-transition="slide">
+                    <section>
+                        <h2>Security</h2>
+                        <h5>Introduction</h5>
+
+
+                        <p class="col-xs-12" style=" font-size: .7em">
+                            Passenger screening processes at Istanbul Ataturk Airport (IST) are thorough and exceed ICAO requirements.
+                        </p>
+                        <img class="img-responsive col-xs-4 col-sm-offset-1" src="https://ussltcher8035.dan.sltc.com/briefingbook_v2/assets/images/Security2.jpg">
+                        <p class="col-xs-6" align="left" style="font-size: .7em; margin: 10px 0 0 20px">
+                            <strong>General Findings:</strong>
+                        </p>
+                        <ul style="float: left; font-size:.6em; padding-left: 40px">
+                            <li>Multiple layers of effective security screening </li>
+                            <li>Effectively using metal detectors and x-ray machines </li>
+                            <li>Robust investment in wide range of technologies  </li>
+                            <li>Good balance of females thoroughly checking niqab (veils) </li>
+
+                        </ul>
+                    </section>
+                    <section><h5>Security Features</h5>
+                    <iframe class="stretch" scrolling="no" src="https://deloittegeo.maps.arcgis.com/apps/Viewer/index.html?appid=f7c11a69b6c94102b679ae2edd88edd6"></iframe>
+				</section>
+                    <section>
+                        <h5>Flight Path Risks</h5>
+                        <iframe class="stretch" style="height:100%;width:100%" src="https://deloittegeo.maps.arcgis.com/apps/Viewer/index.html?appid=f4d93b8bbe3c4b4c80852011975e55b3"></iframe>
+                    </section>
+
+                </section>
+<!--
+				<section data-transition="linear" data-background="#fff" data-background-transition="slide">
+					<h2>Fantastic Ordered List</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Markdown support
+
+						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+
+						```
+						<section data-markdown>
+						  ## Markdown support
+
+						  For those of you who like that sort of thing.
+						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+						</section>
+						```
+					</script>
+				</section>
+
+				<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=cube#/transitions">Cube</a> -
+						<a href="?transition=page#/transitions">Page</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a> -
+						<a href="?transition=linear#/transitions">Linear</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?#/transitions">Default</a>
+					</p>
+				</section>
+
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						Reveal.js comes with a few themes built in: <br>
+						<a href="?#/themes">Default</a> -
+						<a href="?theme=sky#/themes">Sky</a> -
+						<a href="?theme=beige#/themes">Beige</a> -
+						<a href="?theme=simple#/themes">Simple</a> -
+						<a href="?theme=serif#/themes">Serif</a> -
+						<a href="?theme=night#/themes">Night</a> <br>
+						<a href="?theme=moon#/themes">Moon</a> -
+						<a href="?theme=solarized#/themes">Solarized</a>
+					</p>
+					<p>
+						<small>
+							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
+						</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Global State</h2>
+					<p>
+						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+						will be added as a class to the document element when the slide is open. This lets you
+						apply broader style changes, like switching the background.
+					</p>
+				</section>
+
+				<section data-state="customevent">
+					<h2>Custom Events</h2>
+					<p>
+						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+					</p>
+					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+Reveal.addEventListener( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+					</code></pre>
+				</section>
+
+				<section>
+					<section data-background="#007777">
+						<h2>Slide Backgrounds</h2>
+						<p>
+							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
+						</p>
+						<a href="#" class="image navigate-down">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
+						<h2>Image Backgrounds</h2>
+						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
+					</section>
+					<section data-background="./img/outlets.png" data-background-repeat="repeat" data-background-size="4px">
+						<h2>Repeated Image Backgrounds</h2>
+						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					</section>
+				</section>
+
+				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+					<h2>Background Transitions</h2>
+					<p>
+						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
+					</p>
+				</section>
+
+				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
+					<h2>Background Transition Override</h2>
+					<p>
+						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Clever Quotes</h2>
+					<p>
+						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
+					</p>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Pretty Code</h2>
+					<pre><code data-trim contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+					</code></pre>
+					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section>
+
+				<section>
+					<h2>Intergalactic Interconnections</h2>
+					<p>
+						You can link between slides internally,
+						<a href="#/2/3">like this</a>.
+					</p>
+				</section>
+
+				<section>
+					<section id="fragments">
+						<h2>Fragmented Views</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<ol>
+							<li class="fragment"><code>any type</code></li>
+							<li class="fragment"><em>of view</em></li>
+							<li class="fragment"><strong>fragments</strong></li>
+						</ol>
+
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<h2>Fragment Styles</h2>
+						<p>There's a few styles of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment roll-in">roll-in</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p class="fragment highlight-red">highlight-red</p>
+						<p class="fragment highlight-green">highlight-green</p>
+						<p class="fragment highlight-blue">highlight-blue</p>
+						<p class="fragment current-visible">current-visible</p>
+						<p class="fragment highlight-current-blue">highlight-current-blue</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Spectacular image!</h2>
+					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
+						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
+					</a>
+				</section>
+
+				<section>
+					<h2>Export to PDF</h2>
+					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
+					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
+					<script>
+						document.getElementById('slideshare').attributeName = 'allowfullscreen';
+					</script>
+				</section>
+
+				<section>
+					<h2>Take a Moment</h2>
+					<p>
+						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
+						during a presentation.
+					</p>
+				</section>
+				-->
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				parallaxBackgroundImage: './img/Ataturk_Airport_Apron_Night.JPG',
+				parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+        <!-- Toggle Scripts -->
+
+        <script>
+            $( ".fa.fa-list" ).click(function() {
+                $( "#toc" ).animate({width: 'toggle'},{duration: 200});
+            });
+        </script>
+        <script>
+            $( "#testpButton" ).click(function() {
+                $( "#testp" ).slideToggle( "fast" );
+            });
+        </script>
+        <script>
+            $( "#majFeatButton" ).click(function() {
+                $( "#majFeat" ).slideToggle( "fast" );
+            });
+        </script>
+        <script>
+            $( ".fa.fa-home" ).click(function() {
+                window.location.href = "index.html";
+            });
+        </script>
+
+	</body>
+</html>

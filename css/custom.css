@@ -1,0 +1,17 @@
+.table-hover>tbody>tr>td {
+    padding: 0px 15px;
+}
+
+.table-hover>tbody>tr>td>a:not(.image):hover {
+    color: black;
+    text-shadow: none;
+    border: none;
+}
+
+.table-hover>tbody>tr>td:hover {
+    background-color:white;
+}
+
+.table-hover>tbody>tr>td:hover a {
+    color:black;
+}
