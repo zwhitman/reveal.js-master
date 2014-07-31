@@ -71,6 +71,9 @@
                     <td><a href="#/2/2">Major Airport Features</a></td>
                 </tr>
                 <tr>
+                    <td><a href="#/2/3">Change Over Time</a></td>
+                </tr>
+                <tr>
                     <td><a href="#/3/0">Security Introduction</a></td>
                 </tr>
                 <tr>
@@ -109,6 +112,9 @@
                         </tr>
                         <tr>
                             <td><a href="#/2/2">Major Airport Features</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#/2/3">Change Over Time</a></td>
                         </tr>
                         <tr>
                             <td><a href="#/3/0">Security Introduction</a></td>
@@ -162,7 +168,7 @@
                                     In May 2013, the Turkish government awarded a contract to Limak Holding A.S. (the operators for Sabiha Gokcen Airport) for the development of a new airport on the Black Sea that will replace IST as Istanbul's major international air hub.
                                 </li>
                                 <li>
-                                    Of note, IST/s commerical operator, TAV Airports Holding, lost the bid.
+                                    Of note, IST/s commercial operator, TAV Airports Holding, lost the bid.
                                 </li>
                             </ul>
                         </div>
@@ -196,6 +202,17 @@
                         </div>
 
                         <iframe class="stretch" style="min-height:550px" scrolling="no" src="https://deloittegeo.maps.arcgis.com/apps/Viewer/index.html?appid=d91b1196492a4eff83cd37355426629d"></iframe>
+                    </section>
+                    <section>
+                        <h5> Change Over Time</h5>
+                        <button class='btn-primary' id="change_timeButton" style="position:absolute;top:22px;right:1px;z-index:999;background:rgba(0,0,0,0)">Context</button>
+                        <div class="col-xs-4" id="change_time" style="display:none;font-size:.55em;line-height:1.5;padding:10px;text-align:left;position:absolute;right:-1px;top:72px;z-index:999;background:rgba(25,25,25,.8)">
+                            <p>
+                                A few major construction/destruction changes have occurred since 2005 (top satellite image below), such as the building of the General Aviation terminal and additional runway paths.
+                            </p>
+                        </div>
+
+                        <iframe class="stretch" style="min-height:550px" scrolling="no" src="https://deloittegeo.maps.arcgis.com/apps/StorytellingSwipe/index.html?appid=1432826591b148bba14355dd4ac176ec"></iframe>
                     </section>
 				</section>
 
@@ -513,8 +530,13 @@ function linkify( selector ) {
             });
         </script>
         <script>
+            $( "#change_timeButton" ).click(function() {
+                $( "#change_time" ).slideToggle( "fast" );
+            });
+        </script>
+        <script>
             $( ".fa.fa-home" ).click(function() {
-                window.location.href = "index.html";
+                window.location.href = "#";
             });
         </script>
 
